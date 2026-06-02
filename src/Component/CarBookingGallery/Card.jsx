@@ -18,9 +18,6 @@ function Card({item,displayBooking,setDisplayBooking}) {
         <div key={value.id} className="car-card">
             <img src={value.img} alt="" />
             <div className="car-card-details">
-                {/* <div className="card-header">
-                    <p>{value.price}/Daily <span><img src={locationIcon} alt="" />{value.location}</span> </p>
-                </div> */}
                 <div className="card-header">
                     <p>
                         <span className="car-price">
