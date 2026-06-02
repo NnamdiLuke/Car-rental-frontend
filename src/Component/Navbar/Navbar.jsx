@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 import './Navbar.css'
-import Logo from '../../assets/logo.png'
+import car_rental from '../../assets/car_rental.png'
 import menu_icon from '../../assets/menu-icon.png'
 
 function Navbar() {
@@ -19,7 +19,10 @@ function Navbar() {
   }
   return (
     <nav className={`container ${sticky ? 'dark-nav':''}`}>
-      <img src={Logo} alt="Logo" className='logo' />
+      <div className='logo-container'>
+        <img src={car_rental} alt="Logo" className='logo' />
+        <h2>CAR RENTAL</h2>
+      </div>
       <ul className={mobileMenu ? '': 'hide-mobile-menu'}>
         <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
         <li><Link to='about' smooth={true} offset={-150} duration={500}>About Us</Link></li>

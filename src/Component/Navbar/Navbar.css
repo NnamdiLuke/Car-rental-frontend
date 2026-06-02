@@ -12,8 +12,14 @@ nav{
     justify-content: space-between;
     z-index: 10;
 }
+.logo-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 .logo{
-    width: 180px;
+    width: 80px;
+    height: 44px;
 }
 nav ul li{
     display: inline-block;
