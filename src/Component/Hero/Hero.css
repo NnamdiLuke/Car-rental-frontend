@@ -1,0 +1,130 @@
+.hero-home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+.hero-img{
+   height: 100vh;
+   width: 100%; 
+   float: left;
+   left: 0;
+   right: 0;
+   object-fit: fill;
+   padding: none;
+}
+.hero-details{
+    position: absolute;
+    margin: 0px 270px;
+    margin-top: 200px;
+}
+
+.hero-text{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 60px;
+}
+.hero-explore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin-top: 50px;
+    padding: 5px 8px;
+    padding-left: 30px;
+    border-radius: 60px;
+    background-color: white;
+    cursor: pointer;
+}
+.hero-explore p{
+    color: #292929;
+    font-size: 20px;
+    font-weight: 500;
+}
+.hero-dot-play{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-dots{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    list-style: none;
+}
+.hero-dot{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+.hero-dot.orange{
+    background-color: orangered;
+}
+.hero-play{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.hero-play img{
+    width: 80px;
+}
+.hero-play p{
+    color: #fff;
+    font-size: 19px;
+}
+
+
+
+@media (max-width:900px){
+    .hero-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 200px 10%;
+        /* margin-top: 200px; */
+    }
+    .hero-text{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+    }
+    .hero-dot-play{
+        display: block;
+        margin-top: 40px;
+    }
+    .hero-play img{
+        margin-top: 20px;
+        width: 40px;
+    }
+    
+}
+@media (max-width:600px){
+    .hero-text{
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    .hero-explore{
+        gap: 5px;
+        margin-top: 50px;
+        padding: 5px 8px;
+        padding-left: 30px;
+    }
+    .hero-explore img{
+        width: 30px;
+    }
+    .hero-dot{
+        width: 13px;
+        height: 13px;
+    }
+    .hero-explore p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
