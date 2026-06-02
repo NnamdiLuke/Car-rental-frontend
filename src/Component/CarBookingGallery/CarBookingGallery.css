@@ -24,51 +24,69 @@
   border-left: 1px solid #212EA0;
   border-right: 1px solid #212EA0;
 }
-.car-gallery{
+.car-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
-.car-card{
-  margin: 5px;
-  min-width: 200px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #e0e0e0;
+.car-card {
+  background: #fff;
   border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #eef1f5;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-.car-card img{
-    width: 100%;
-    top: 0;
-    height: 70%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    margin-bottom: 10px;
+.car-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
-.car-card-details{
+
+.car-card img {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
-.card-header p{
-  width: 100%;
+
+.car-card-details {
+  padding: 18px;
+}
+
+.card-header p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:30px;
+  margin: 0;
 }
-.card-header span{
+
+.card-header span {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+  font-size: 14px;
 }
-.card-header img{
-  width: 15px;
+
+.card-header img {
+  width: 14px;
+  height: 14px;
 }
-.button{
+
+.car-price {
+  color: #212EA0;
+  font-weight: 700;
+  font-size: 18px;
+}
+.car-card h3 {
+  margin: 12px 0 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* .button{
   width: 50%;
   left: 50%;
   right: 50%;
@@ -77,17 +95,37 @@
   text-align: center;
   justify-content: center;
   margin-bottom: 10px;
+} */
+ .button {
+  width: 100%;
 }
-.button button{
+.button button {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  background: #212EA0;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* .button button{
   width: 100%;
   border: 1px solid gray;
   padding: 8px 20px;
   background-color: #212EA0;
   color: #fff;
 
-}
-.button button:hover{
+} */
+/* .button button:hover{
   background-color: black;
+} */
+ .button button:hover {
+  background: #1a2580;
+  transform: translateY(-2px);
 }
 
 

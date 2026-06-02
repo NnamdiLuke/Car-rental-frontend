@@ -18,13 +18,25 @@ function Card({item,displayBooking,setDisplayBooking}) {
         <div key={value.id} className="car-card">
             <img src={value.img} alt="" />
             <div className="car-card-details">
-                <div className="card-header">
+                {/* <div className="card-header">
                     <p>{value.price}/Daily <span><img src={locationIcon} alt="" />{value.location}</span> </p>
+                </div> */}
+                <div className="card-header">
+                    <p>
+                        <span className="car-price">
+                        ${value.price}/day
+                        </span>
+
+                        <span>
+                        <img src={locationIcon} alt="" />
+                        {value.location}
+                        </span>
+                    </p>
                 </div>
                 <h3>{value.title}</h3>
                 <div
                     className="button"
-                    onClick={() => handleBookNowClick(value)} // Pass the 'value' (car item)
+                    onClick={() => handleBookNowClick(value)} 
                     >
                     <button>Book Now</button>
                 </div>
