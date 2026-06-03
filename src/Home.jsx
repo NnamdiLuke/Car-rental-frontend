@@ -2,9 +2,11 @@ import { useState } from "react"
 import Hero from "./Component/Hero/Hero"
 import Navbar from "./Component/Navbar/Navbar"
 import CarBookingGallery from "./Component/CarBookingGallery/CarBookingGallery"
-import Header from "./Component/headers/Header"
 import OtherServices from "./Component/otherservices/page"
 import Footer from "./Component/footer/page"
+import Testimonials from "./Component/Testimonials/Testimonials"
+import Contact from "./Component/Contact/Contact"
+import Title from "./Component/Title/Title"
 
 function Home() {
     const [displayBooking, setDisplayBooking] = useState(false)
@@ -12,10 +14,14 @@ function Home() {
     <div>
       <Navbar/>
       <Hero/>
-      <Header title='Our Fleet Of Cars'/>
+      <Title Title='Cars' subTitle='Our Fleet Of Cars' />
       <CarBookingGallery displayBooking={displayBooking} setDisplayBooking={setDisplayBooking}/>
-      <Header title='Our Other Services'/>
+      <Title Title='Other Services' subTitle='Other services we render'/>
       <OtherServices/>
+      <Title Title='Testimonials' subTitle='What customers Says'/>
+      <Testimonials/>
+      <Title Title='Contact Us' subTitle='Get in Touch'/>
+      <Contact/>
       <Footer/>
     </div>
   )
