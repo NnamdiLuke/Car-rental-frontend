@@ -76,7 +76,7 @@ nav ul li{
         right: 0;
         bottom: 0;
         background: #212EA0;
-        z-index: -1;
+        z-index: 10;
         width: 200px;
         padding-top: 70px;
         transition: 0.5s;
@@ -89,6 +89,7 @@ nav ul li{
         display: block;
         width: 30px;
         cursor: pointer;
+        z-index: 10;
     }
     .hide-mobile-menu{
         right: -200px;
