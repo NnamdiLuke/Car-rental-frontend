@@ -24,8 +24,8 @@ function Testimonials() {
         slider.current.style.transform = `translateX(${tx}%)`;
     }
   return (
-    <div className="container">
-        <div className='testimonials' id='testimonials'>
+    <div className="container" id='testimonials'>
+        <div className='testimonials'>
         <img src={next_icon} alt="" className='next-btn' onClick={slideForward} />
         <img src={back_icon} alt="" className='back-btn' onClick={slideBackword}/>
         <div className="slider">

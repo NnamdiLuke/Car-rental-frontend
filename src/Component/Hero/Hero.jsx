@@ -29,7 +29,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero-home">
+    <div className="hero-home" id="hero">
       <div className="background">
         {playStatus ? (
           <video className="hero-img fade-in" autoPlay loop muted>

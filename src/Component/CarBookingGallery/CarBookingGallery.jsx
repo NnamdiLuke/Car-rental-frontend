@@ -14,7 +14,6 @@ import location from '../../assets/location-dot-solid.svg'
 import Data from '../../Data'
 import Button from './Button'
 import Card from './Card'
-import Header from '../headers/header'
 
 function CarBookingGallery({displayBooking,setDisplayBooking}) {
     const [item, setItem] = useState(Data)
@@ -25,7 +24,7 @@ function CarBookingGallery({displayBooking,setDisplayBooking}) {
         setItem(newItems)
     }
   return (
-    <div className='container'>
+    <div className='container' id='cars'>
         <Button 
             buttonItems={buttonItems} 
             filterItems={filterItems} 

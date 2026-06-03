@@ -5,7 +5,7 @@ import movingTruck2 from "../../assets/img/movingTruck2.jpg";
 
 function OtherServices() {
   return (
-    <div className="container">
+    <div className="container" id="services">
       <div className="service-gallery">
         <div className="service">
           <div className="service-image">
