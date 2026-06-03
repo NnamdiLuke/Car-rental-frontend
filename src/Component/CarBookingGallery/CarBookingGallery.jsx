@@ -25,11 +25,13 @@ function CarBookingGallery({displayBooking,setDisplayBooking}) {
     }
   return (
     <div className='container' id='cars'>
-        <Button 
-            buttonItems={buttonItems} 
-            filterItems={filterItems} 
+        <div className="category-wrapper">
+          <Button
+            buttonItems={buttonItems}
+            filterItems={filterItems}
             setItem={setItem}
-        />
+          />
+        </div>
         <Card 
           item={item}
           displayBooking={displayBooking}
