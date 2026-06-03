@@ -14,10 +14,10 @@ function Contact() {
           <h3>Send us a message <img src={msg_icon} alt="" /></h3>
           <p>Feel free to reach out through contact form or find our contact information below.
               Your feedback, questions, and suggestions are important to us as we strive to provide 
-              exceptional service to our university community
+              exceptional service to our customers
           </p>
           <ul>
-              <li><img src={mail_icon} alt="" />Contact@edusity.com</li>
+              <li><img src={mail_icon} alt="" />Contact@carrentalfro.com</li>
               <li><img src={phone_icon} alt="" />+23498479293</li>
               <li><img src={location_icon} alt="" />7 Nnamdi Street Awka Anambr State Awka</li>
           </ul>

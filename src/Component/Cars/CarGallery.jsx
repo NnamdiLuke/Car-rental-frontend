@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
-import './CarBookingGallery.css'
+import './CarGallery.css'
 import hilux from '../../assets/cars/2015_hilux.jpg' 
 import Land_Cruiser_300_series from '../../assets/cars/2021_Land_Cruiser_300_series.jpg' 
 import BMW_X3_car_model from '../../assets/cars/BMW-X3-car-model.jpg' 
@@ -15,7 +15,7 @@ import Data from '../../Data'
 import Button from './Button'
 import Card from './Card'
 
-function CarBookingGallery({displayBooking,setDisplayBooking}) {
+function CarGallery({displayBooking,setDisplayBooking}) {
     const [item, setItem] = useState(Data)
     const buttonItems = [...new Set(Data.map((val)=>val.category))]
     
@@ -46,4 +46,4 @@ function CarBookingGallery({displayBooking,setDisplayBooking}) {
   )
 }
 
-export default CarBookingGallery
+export default CarGallery

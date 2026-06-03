@@ -6,6 +6,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { LocationEdit, Mail, Phone } from "lucide-react";
 
 function Footer() {
   return (
@@ -48,13 +49,13 @@ function Footer() {
         <div className="footer-column">
           <h3>Contact Us</h3>
 
-          <div className="contact-item">📞 +23470220076090</div>
+          <div className="contact-item"><Phone size={16}/> +23470220076090</div>
 
-          <div className="contact-item">✉️ admn@cr.com</div>
+          <div className="contact-item"><Mail size={16}/> Contact@carrentalfro.com</div>
 
-          <div className="contact-item">📍 Wuse II, Abuja</div>
+          <div className="contact-item"><LocationEdit size={16}/> Wuse II, Abuja</div>
 
-          <div className="contact-item">📍 Victoria Island, Lagos</div>
+          <div className="contact-item"><LocationEdit size={16}/> Victoria Island, Lagos</div>
 
           <div className="socials">
             <a href="/"><FaFacebook size={20}/></a>

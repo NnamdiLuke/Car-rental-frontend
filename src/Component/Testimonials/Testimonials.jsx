@@ -9,47 +9,33 @@ import user_4 from '../../assets/img/testimonial/user-4.png'
 
 const testimonials = [
   {
-    name: 'William Jackson',
+    name: "Michael Johnson",
     image: user_1,
-    company: 'Edusity, USA',
+    company: "Abuja, Nigeria",
     testimony:
-      "Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations."
+      "The booking process was quick and straightforward. The vehicle was clean, well-maintained, and exactly as described. Their customer service team was professional and responsive throughout my trip. I will definitely use their service again."
   },
   {
-    name: 'John Doe',
+    name: "Sarah Williams",
     image: user_2,
-    company: 'Edusity, USA',
+    company: "Lagos, Nigeria",
     testimony:
-      "The learning environment is outstanding. The lecturers are knowledgeable and always willing to help students succeed in their academic journey."
+      "I needed a reliable car for a business trip, and this company exceeded my expectations. The car was delivered on time, fuel-efficient, and very comfortable. The entire experience was seamless from pickup to return."
   },
   {
-    name: 'Jane Doe',
+    name: "David Okafor",
     image: user_3,
-    company: 'Edusity, USA',
+    company: "Port Harcourt, Nigeria",
     testimony:
-      "From modern facilities to a welcoming community, Edusity has provided me with opportunities that have helped me grow both academically and personally."
+      "Excellent service and affordable pricing. The rental process was transparent with no hidden charges. The vehicle performed perfectly during my family vacation, making our journey safe and enjoyable."
   },
   {
-    name: 'Sarah Johnson',
+    name: "Grace Eze",
     image: user_4,
-    company: 'Edusity, USA',
+    company: "Enugu, Nigeria",
     testimony:
-      "I am grateful for the support and mentorship I received throughout my studies. It has been a rewarding and transformative experience."
-  },
-  {
-    name: 'Jane Doe',
-    image: user_3,
-    company: 'Edusity, USA',
-    testimony:
-      "From modern facilities to a welcoming community, Edusity has provided me with opportunities that have helped me grow both academically and personally."
-  },
-  {
-    name: 'Sarah Johnson',
-    image: user_4,
-    company: 'Edusity, USA',
-    testimony:
-      "I am grateful for the support and mentorship I received throughout my studies. It has been a rewarding and transformative experience."
-  },
+      "I was impressed by the variety of vehicles available and the professionalism of the staff. The SUV I rented was in excellent condition and made my weekend trip stress-free. Highly recommended for anyone looking for dependable car rentals."
+  }
 ];
 function Testimonials() {
     const slider = useRef();
